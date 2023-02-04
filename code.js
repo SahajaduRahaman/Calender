@@ -72,7 +72,7 @@ const renderCalendar = () => {
   for (let i = 1; i <= monthLastDay; i++) {
     if (
       i === new Date().getDate() &&
-      date.getMonth() === new Date().getMonth()
+      date.getMonth() === new Date().getMonth() && date.getFullYear() === new Date().getFullYear()
     ) {
       days += `<div class="today">${i}</div>`;
     } else {
